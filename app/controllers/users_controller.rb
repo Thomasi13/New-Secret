@@ -12,7 +12,6 @@ class UsersController < ApplicationController
 
   def show
     @user_name = User.find(params[:id]).nick_name
-    puts @user_name
   end
 
   def read

@@ -7,7 +7,8 @@ class SessionsController < ApplicationController
 
 	   if user && user.authenticate(params[:session][:password])
 		  flash[:success] = 'Your are succefully connected'
-		  log_in (user) 
+		  log_in (user)
+      puts params 
 		  redirect_to root_path
 
     else
@@ -17,6 +18,8 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    log_out
+    redirect_to root_url
   end
 
 end

@@ -1,6 +1,14 @@
-<div class="center jumbotron">
-
-	<p class="display-3" style:'text-align:center' > Le secret est ... rien </p>
 
 
-</div>
+
+<% if logged_in? %>
+
+	<div class="center jumbotron">
+		<p class="display-3" style:'text-align:center' > Le secret est ... rien </p>
+	</div>
+
+<% else %>
+	<div class="modal-body">
+		<%= render "layouts/login" %>
+	</div>
+<% end %>

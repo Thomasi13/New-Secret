@@ -1,7 +1,5 @@
 class StaticPagesController < ApplicationController
   def home
-  	puts"__ -_______---____"
-  	 puts params
   end
 
   def show
