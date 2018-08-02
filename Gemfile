@@ -10,6 +10,7 @@ group :development, :test do
   gem 'pry-byebug', '~> 3.6'
   gem 'sqlite3'
   gem 'rails-erd'
+  gem 'bcrypt', '~> 3.1.7'
 end
 
 
@@ -17,7 +18,9 @@ gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 
 group :production do
   gem 'pg'
-end# Use Puma as the app server
+end
+
+# Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -34,8 +37,6 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
